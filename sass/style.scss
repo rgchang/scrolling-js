@@ -1,0 +1,85 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+$white: hsla(0, 0%, 96%, 1);
+$black: hsla(0, 0%, 9%, 1);
+
+body {
+	background-color: $white;
+	color: $black;
+	padding: 10vw 5vw;
+}
+
+header {
+	background-color: $black;
+	color: red;
+	nav {
+		display: flex;
+		h1 {
+			//display: inherit;
+			margin: 0 auto 0 0;
+			a {
+				line-height: 40px;
+				// display: inherit;
+				// align-items: center;
+			}
+		}
+		ul {
+			display: inherit;
+			a {
+				display: inherit;
+				padding: 10px;
+			}
+		}
+		a {
+			color: $white;
+		}
+	}
+	&.fixie {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+main {
+	background-color: darken($white, 5);
+	padding: inherit;
+}
+
+footer {
+	display: flex;
+	text-align: center;
+	font-family: sans-serif;
+	div {
+		//background-color: #C6C6C6;
+		background-color: #EDEDED;
+		//opacity: 0.4;
+		height: 20em;
+		width: 14em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+		padding: 0 10px;
+		box-sizing: border-box;
+		p:first-child {
+			font-size: 3em;
+			border-bottom: 8px solid white;
+			padding: 0 10px;
+			span {
+				color: blue;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+		}
+		p {
+			color: $black;
+		}
+	}
+}
